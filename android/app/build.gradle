@@ -31,7 +31,7 @@ def keystoreProperties = new Properties()
        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
    }
 
-   android {
+android {
     compileSdkVersion 28
 
     sourceSets {
@@ -60,10 +60,13 @@ def keystoreProperties = new Properties()
            storePassword keystoreProperties['storePassword']
        }
    }
-   buildTypes {
+       buildTypes {
        release {
            signingConfig signingConfigs.release
        }
+       debug {
+            signingConfig signingConfigs.debug
+        }
    }
 
 }

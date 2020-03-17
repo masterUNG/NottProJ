@@ -220,7 +220,7 @@ class _AuthenState extends State<Authen> {
 
   Widget showAppName() {
     return Text(
-      'Somsak Pharma',
+      'Ung Pharma',
       style: TextStyle(
         fontSize: MyStyle().h1,
         color: MyStyle().mainColor,
